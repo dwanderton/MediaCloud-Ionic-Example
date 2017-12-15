@@ -1,5 +1,9 @@
-Example MediaCloud Ionic App
+David Anderton MediaCloud Ionic App
 ============================
+
+Unfortunately all the results return -1 making testing difficult, however the iOS code doesn't build and ends on a infinite loading screen with errors. After spending 7 hours on this trying to debug, and moving on from the direct iOS code that was also not working on my OS I'll write the code that I assume will work, so apologies if it has some errors, its just not been viable to test it.
+
+
 
 This is a sample [Ionic](http://ionicframework.com) mobile app that shows results from the MediaCloud API.
 

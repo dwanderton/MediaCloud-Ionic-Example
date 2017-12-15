@@ -1,0 +1,9 @@
+<ion-view view-title="Search">
+  <ion-content>
+    <h1>Search for {{word1}} compared to {{word2}}</h1>
+    <p ng-if="data.word1sentenceCount==null||data.word2sentenceCount==null"><ion-spinner></ion-spinner></p>
+    <p ng-if="data.word1sentenceCount>data.word2sentenceCount">{{word1}} was talked about more ({{data.word1sentenceCount | number}}) in US Mainstream media than {{word2}} ({{data.word2sentenceCount | number}})</p>
+    <p ng-if="data.word2sentenceCount>data.word1sentenceCount">{{word2}} was talked about more ({{data.word2sentenceCount | number}}) in US Mainstream media than {{word1}} ({{data.word1sentenceCount | number}})</p>
+    <p ng-if="data.word1sentenceCount==data.word2sentenceCount">Wow! There are exactly the same number of results for {{word1}} and {{word2}} ({{data.word1sentenceCount | number}}).</p>
+  </ion-content>
+</ion-view>
